@@ -4,10 +4,10 @@ export class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className="footer mt-auto py-3 bg-light">
+        <footer className="footer w-100 mt-auto py-3 bg-light">
           <div className="container text-center">
             <span className="text-muted">
-              Made by &nbsp;
+              Made by&nbsp;
               <a className="footer-brand" href="https://github.com/Susmita-Dey/TextUtils">
                 Hack Sales Performance
               </a>.

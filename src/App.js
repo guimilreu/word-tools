@@ -10,7 +10,7 @@ import ErrorPage from './components/ErrorPage';
 
 const App = () => {
 	return (
-		<div className="container-fluid h-100">
+		<div className="h-100">
 			<Navbar />
 			<Alert />
 			<div className="container my-3">

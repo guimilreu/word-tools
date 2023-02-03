@@ -75,7 +75,6 @@ const textSlice = createSlice({
     extractText(state, action) {
       const letters = state.text.match(/[a-z]|[A-Z]/g);
       if (letters === null) {
-        state.text = '';
         state.status = 'warning';
       } else {
         state.text = letters.join('');
@@ -85,7 +84,6 @@ const textSlice = createSlice({
     extractNumbers(state, action) {
       const digits = state.text.match(/[0-9]/g);
       if (digits === null) {
-        state.text = '';
         state.status = 'warning';
       } else {
         state.text = digits.join('');
@@ -97,7 +95,6 @@ const textSlice = createSlice({
         /(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim
       );
       if (link === null) {
-        state.text = '';
         state.status = 'warning';
       } else {
         state.text = link.join('');

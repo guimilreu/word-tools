@@ -1,0 +1,29 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+.navbar .nav-item {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-control {
+  border: solid 2px var(--bs-gray-300);
+  font-size: 16px;
+  padding: 0.5rem;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-primary);
+}/*# sourceMappingURL=App.css.map */
